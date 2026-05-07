@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { useUser } from '../../context/UserContext';
+import Branding from '../../components/Branding';
 import './onboarding.css';
 
 export default function Welcome({ onNext }) {
@@ -50,7 +51,10 @@ export default function Welcome({ onNext }) {
           <button className="btn-primary" onClick={() => onNext('bmi')} id="btn-get-started">
             Get Started →
           </button>
-          <p className="welcome-note">Free • No account required • Data stays on device</p>
+          <div className="welcome-note-wrap">
+            <p className="welcome-note">Free • No account required • Data stays on device</p>
+            <Branding />
+          </div>
         </div>
       </div>
     </div>

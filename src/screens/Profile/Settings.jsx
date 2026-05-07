@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useUser } from '../../context/UserContext';
+import Branding from '../../components/Branding';
 import '../Home/home.css';
 import './settings.css';
 
@@ -214,8 +215,11 @@ export default function Settings() {
               <h3 style={{ fontSize:'1.2rem' }}>NutriSmart</h3>
               <p style={{ fontSize:'0.8rem', color:'var(--text-muted)', marginTop:8 }}>v1.0.0 · AMD Ideathon 2026</p>
               <p style={{ fontSize:'0.82rem', color:'var(--text-secondary)', marginTop:12, lineHeight:1.7 }}>
-                Smart food recommendations powered by your unique health profile, goals, and real-time wellness data.
+                Smart food recommendations by <span style={{color:'var(--green-primary)', fontWeight:700}}>VeloLabs</span>. Powered by your unique health profile, goals, and real-time wellness data.
               </p>
+              <div style={{ marginTop: 16 }}>
+                <Branding />
+              </div>
             </div>
             <div className="glass-card" style={{ padding:'16px 20px', marginBottom:16 }}>
               {[

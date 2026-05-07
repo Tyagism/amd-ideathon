@@ -1,6 +1,7 @@
 import React, { useState, useMemo } from 'react';
 import { useUser } from '../context/UserContext';
 import foods from '../data/foods.json';
+import Branding from '../components/Branding';
 import FoodCard from './Home/FoodCard';
 import FoodDetail from './Home/FoodDetail';
 import './Home/home.css';
@@ -73,6 +74,7 @@ export default function Explore() {
           </div>
         )}
         <div style={{ height: 20 }} />
+        <Branding />
       </div>
 
       {selectedFood && <FoodDetail food={selectedFood} onClose={() => setSelectedFood(null)} profile={profile} />}

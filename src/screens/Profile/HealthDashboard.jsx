@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { getMockHealth } from '../../data/mockHealth';
+import Branding from '../../components/Branding';
 import '../Home/home.css';
 import './health.css';
 
@@ -106,6 +107,7 @@ export default function HealthDashboard() {
         <p style={{ fontSize:'0.72rem', color:'var(--text-muted)', textAlign:'center', padding:'8px 0 20px' }}>
           📱 Simulated from Apple Health / Google Fit · Updates every 30s
         </p>
+        <Branding />
       </div>
     </div>
   );

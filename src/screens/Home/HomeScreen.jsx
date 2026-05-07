@@ -2,6 +2,7 @@ import React, { useState, useEffect, useMemo } from 'react';
 import { useUser } from '../../context/UserContext';
 import { useFoodLog } from '../../context/FoodLogContext';
 import { getMockHealth } from '../../data/mockHealth';
+import Branding from '../../components/Branding';
 import foods from '../../data/foods.json';
 import FoodCard from './FoodCard';
 import FoodDetail from './FoodDetail';
@@ -149,6 +150,7 @@ export default function HomeScreen() {
         )}
 
         <div style={{ height: 20 }} />
+        <Branding />
       </div>
 
       {/* Modals */}
