@@ -8,6 +8,20 @@
     <title>NutriSmart — Your Smart Nutrition Companion</title>
     <meta name="description" content="Personalized food recommendations by VeloLabs. Powered by your unique health profile, goals, and real-time wellness data." />
     <meta name="author" content="VeloLabs" />
+    <script>
+      window.addEventListener('load', function() {
+        window.parent.postMessage({
+          isStreamlitMessage: true,
+          type: "streamlit:componentReady",
+          apiVersion: 1
+        }, "*");
+        window.parent.postMessage({
+          isStreamlitMessage: true,
+          type: "streamlit:setFrameHeight",
+          height: window.innerHeight
+        }, "*");
+      });
+    </script>
   </head>
   <body>
     <div id="root"></div>
