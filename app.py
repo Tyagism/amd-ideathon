@@ -13,8 +13,6 @@ st.markdown("""
         max-width: 100% !important;
     }
     iframe {
-        width: 100vw !important;
-        height: 100vh !important;
         border: none !important;
     }
     header {
